@@ -1,0 +1,123 @@
+Name: Model
+Type: ModelCategoryFolder
+Children:
+- Name: Tank1_LevelInstance
+  Type: Tank1_Level
+  DataType: Int32
+  Value: 0
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/Tank1/Level"
+- Name: TestIncrementTag
+  Id: g=6a1860552646659b772dc8f963644e96
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/TestIncrementTag"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Variable1
+  Id: g=ce13021a7e8690fc9ad1b2d15a5f75b3
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: MyNameUDT
+  Id: g=83ef13cd6337122113283c65cb9853c6
+  Supertype: BaseObjectType
+  Children:
+  - Name: Speed
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Accelerator
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+- Name: MyMotorUDT
+  Id: g=c8cc23554d4017ffa7161f2cea48aebd
+  Supertype: BaseObjectType
+  Children:
+  - Name: Speed
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Power
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Running
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+- Name: Tank1_Level
+  Id: g=5ad4154ec8124e0590b5df4e60bc118e
+  Supertype: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/Tank1/Level"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      ModellingRule: Optional
+      Value: 2
+- Name: MyMotorUDT1
+  Id: g=c154521b6f48720da172385e3da62e5a
+  Type: MyMotorUDT
+  Children:
+  - Name: Speed
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Power
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Running
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+- Name: MyMotorUDT2
+  Id: g=de9ef117b422cfaee35c218e961bcdbd
+  Type: MyMotorUDT
+  Children:
+  - Name: Speed
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Power
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Running
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+- Name: MyMotorUDT3
+  Type: MyMotorUDT
+  Children:
+  - Name: Speed
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Power
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Running
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
